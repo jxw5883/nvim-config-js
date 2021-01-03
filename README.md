@@ -9,4 +9,8 @@ Yet another nvim config for js/react native development.
 
 ## Installation
 
-Clone this repo to `~/.config/nvim`. Then launch nvim. 
+Clone this repo and rename it to `~/.config/nvim`. Then initialize the submodule. (My config depends on https://github.com/jiangmiao/auto-pairs).
+
+```
+git submodule init --update
+```
