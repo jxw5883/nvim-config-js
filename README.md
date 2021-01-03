@@ -1,5 +1,5 @@
 # nvim-config-js
-Yet another nvim config for js/react native development.
+Yet another nvim config for js/react native development. I took these configs from a medium guide and if I ever do find the guide again, I'll link them here.
 
 ## Features
 
