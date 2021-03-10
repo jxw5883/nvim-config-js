@@ -9,7 +9,7 @@ call plug#begin()
 " here you'll add all the plugins needed
 Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-
+Plug 'vim-airline/vim-airline'
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'} " this is for auto complete, prettier and tslinting
 
 let g:coc_global_extensions = ['coc-tslint-plugin', 'coc-tsserver', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier']  " list of CoC extensions needed
@@ -23,6 +23,19 @@ Plug 'maxmellon/vim-jsx-pretty'
 
 " html and css plugin
 Plug 'mattn/emmet-vim'
+
+" Python support
+"Plug 'Valloric/YouCompleteMe'
+Plug 'vim-syntastic/syntastic'
+Plug 'nvie/vim-flake8'
+Plug 'neomake/neomake'
+Plug 'davidhalter/jedi-vim'
+let g:neomake_python_enabled_makers = ['pylint']
+
+" latex plugin
+Plug 'lervag/vimtex'
+Plug 'Konfekt/FastFold'
+Plug 'matze/vim-tex-fold'
 call plug#end()
 
 
@@ -35,6 +48,6 @@ set softtabstop=2
 " when indenting with '>', use 2 spaces width
 set shiftwidth=2
 
-
+autocmd BufNewFile,BufRead ~/Git/scenomi/mushserver/* set tabstop=4 softtabstop=4 shiftwidth=4
 au BufNewFile,BufRead *.ejs set filetype=html
 
