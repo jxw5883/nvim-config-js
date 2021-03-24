@@ -29,7 +29,8 @@ Plug 'mattn/emmet-vim'
 Plug 'vim-syntastic/syntastic'
 Plug 'nvie/vim-flake8'
 Plug 'neomake/neomake'
-Plug 'davidhalter/jedi-vim'
+"Plug 'davidhalter/jedi-vim'
+Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
 let g:neomake_python_enabled_makers = ['pylint']
 
 " latex plugin
